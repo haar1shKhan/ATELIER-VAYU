@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { 'colors': { 'error-container': '#ffdad6', 'tertiary-fixed': '#ebe1d3', 'inverse-primary': '#ffb3b5', 'primary-fixed-dim': '#ffb3b5', 'background': '#fef9f0', 'surface-container-highest': '#e7e2d9', 'primary-container': '#4a1118', 'on-secondary': '#ffffff', 'outline-variant': '#d8c1c1', 'surface-container': '#f2ede4', 'on-tertiary': '#ffffff', 'outline': '#867273', 'error': '#ba1a1a', 'inverse-surface': '#32302a', 'surface-tint': '#91484d', 'on-primary-container': '#c9757a', 'on-tertiary-container': '#948c7f', 'on-error-container': '#93000a', 'surface-container-high': '#ece8df', 'secondary': '#725b31', 'tertiary': '#141008', 'secondary-container': '#fedea9', 'on-secondary-fixed-variant': '#58431c', 'secondary-fixed': '#fedea9', 'on-secondary-container': '#786137', 'on-primary': '#ffffff', 'on-surface': '#1d1c16', 'on-tertiary-fixed-variant': '#4c463c', 'surface-container-lowest': '#ffffff', 'tertiary-fixed-dim': '#cfc5b8', 'surface-bright': '#fef9f0', 'surface': '#fef9f0', 'on-secondary-fixed': '#271900', 'on-background': '#1d1c16', 'secondary-fixed-dim': '#e1c290', 'surface-variant': '#e7e2d9', 'on-primary-fixed': '#3c060e', 'on-error': '#ffffff', 'surface-container-low': '#f8f3ea', 'on-tertiary-fixed': '#1f1b12', 'inverse-on-surface': '#f5f0e7', 'primary': '#2d0006', 'on-primary-fixed-variant': '#743137', 'surface-dim': '#ded9d1', 'on-surface-variant': '#534343', 'primary-fixed': '#ffdada', 'tertiary-container': '#2a251c' }, 'borderRadius': { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, 'spacing': { 'gutter': '1.5rem', 'margin-desktop': '5rem', 'space-xl': '4.5rem', 'margin': '1.5rem', 'margin-tablet': '3rem', 'space-sm': '0.75rem', 'space-md': '1.5rem', 'space-xs': '0.375rem', 'gutter-desktop': '2.5rem', 'space-lg': '2.5rem', 'gutter-tablet': '1.5rem' }, 'fontFamily': { 'title-lg': ['Inter'], 'display-lg-mobile': ['Playfair Display'], 'body-md': ['Inter'], 'headline-lg': ['Playfair Display'], 'headline-sm': ['Playfair Display'], 'headline-md': ['Playfair Display'], 'label-lg': ['Inter'], 'headline-lg-mobile': ['Playfair Display'], 'label-md': ['Inter'], 'display-lg': ['Playfair Display'], 'label-sm': ['Inter'], 'body-lg': ['Inter'] }, 'fontSize': { 'title-lg': ['1.125rem', { 'lineHeight': '1.75rem', 'letterSpacing': '0.04em', 'fontWeight': '400' }], 'display-lg-mobile': ['2.75rem', { 'lineHeight': '3.25rem', 'letterSpacing': '-0.01em', 'fontWeight': '400' }], 'body-md': ['0.875rem', { 'lineHeight': '1.5rem', 'letterSpacing': '0.015em', 'fontWeight': '300' }], 'headline-lg': ['3rem', { 'lineHeight': '3.5rem', 'letterSpacing': '-0.01em', 'fontWeight': '400' }], 'headline-sm': ['1.5rem', { 'lineHeight': '2rem', 'letterSpacing': '0.01em', 'fontWeight': '500' }], 'headline-md': ['2.25rem', { 'lineHeight': '2.75rem', 'letterSpacing': '0em', 'fontWeight': '400' }], 'label-lg': ['0.75rem', { 'lineHeight': '1rem', 'letterSpacing': '0.18em', 'fontWeight': '500' }], 'headline-lg-mobile': ['2rem', { 'lineHeight': '2.5rem', 'letterSpacing': '0em', 'fontWeight': '400' }], 'label-md': ['0.6875rem', { 'lineHeight': '0.875rem', 'letterSpacing': '0.22em', 'fontWeight': '500' }], 'display-lg': ['4.5rem', { 'lineHeight': '5rem', 'letterSpacing': '-0.02em', 'fontWeight': '400' }], 'label-sm': ['0.625rem', { 'lineHeight': '0.75rem', 'letterSpacing': '0.25em', 'fontWeight': '500' }], 'body-lg': ['1rem', { 'lineHeight': '1.75rem', 'letterSpacing': '0.01em', 'fontWeight': '300' }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary"><header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="w-full bg-primary text-on-primary py-2 px-margin text-center"><p class="font-label-sm text-label-sm uppercase text-on-primary tracking-[0.25em]">AUTUMN / WINTER 2025 COUTURE ARCHIVE · COMPLIMENTARY GLOBAL WHITE-GLOVE DELIVERY &amp; BESPOKE TAILORING</p></div><div class="h-20 w-full px-margin lg:px-margin-desktop flex items-center justify-between transition-all duration-300"><div class="flex items-center gap-space-md"><img alt="Brand logo. - Primary color: #4a1118
+- Font: playfairDisplay
+- Mode: light
+- Roundness: rounded-lg
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wfqq9zl-Dr1KOcwpCPuBM08kllXhGBpqUrrjo0UpWXgdr5MIp8MQz67tC2goyBTrPWcoC65bM-vqZGRa6fUMSWb3w4C1AhIuqSU7hM2BJQn5NpWv-AOei8W2EJgXOx8sLpLRs8KgSTFdEDJXUyRN2hD0P1VS8abk0QrXxrYARlQtF5uPn-IzvW6yybVEElDmAAfsQQjQ7Fb1IPG0EO7szDxXjfrTzCsB3xIXSjZO4a1-nEdl0OdkH-8g"/><a class="flex flex-col" data-path="home" href="#"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none uppercase">ATELIER VAYU</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-[0.25em] mt-1">HAUTE COUTURE</span></a></div><nav class="hidden xl:flex items-center gap-space-md" data-active-classes="text-primary font-medium underline underline-offset-8 decoration-secondary"><a aria-current="page" class="uppercase transition-colors py-2 text-primary font-medium underline underline-offset-8 decoration-secondary" data-path="collections" href="#">COLLECTIONS</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="new-arrivals" href="#">NEW ARRIVALS</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="men" href="#">MEN</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="women" href="#">WOMEN</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="atelier-and-craft" href="#">ATELIER &amp; CRAFT</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface transition-colors py-2" data-path="salon-and-appointments" href="#">SALON &amp; APPOINTMENTS</a></nav><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-sm"><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="search" href="#">SEARCH</a><span class="text-secondary">·</span><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="curation-archive" href="#">CURATION ARCHIVE</a><span class="text-secondary">·</span><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="account" href="#">ACCOUNT</a><span class="text-secondary">·</span><a class="font-label-md text-label-md uppercase text-primary font-medium hover:text-on-surface transition-colors py-1" data-path="bag" href="#">BAG (2)</a></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Editorial Page Title Section -->
+<section class="w-full px-margin lg:px-margin-desktop pt-space-lg pb-space-md">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="max-w-3xl">
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-secondary">CATALOGUE ARCHIVE // 2025</span>
+<span class="text-secondary opacity-40">/</span>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-on-surface-variant">EDITION NO. VII</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight uppercase">
+          THE CEREMONIAL ARCHIVE
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-space-xs max-w-2xl">
+          Bespoke handloom occasion wear and architectural silhouettes, woven across ancient looms in Varanasi and sculpted in our New Delhi atelier.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm pb-1">
+<button class="bg-surface-container-high hover:bg-surface-container-highest transition-colors px-space-md py-space-xs text-primary font-label-md text-label-md uppercase tracking-[0.22em] flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>LOOKBOOK DOSSIER (PDF)</span>
+</button>
+<button class="bg-primary text-on-primary px-space-md py-space-xs font-label-md text-label-md uppercase tracking-[0.22em] hover:bg-tertiary transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+<span>BESPOKE APPOINTMENT</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Editorial Filter & Curation Architecture Bar -->
+<section class="w-full px-margin lg:px-margin-desktop mb-space-xl sticky top-20 z-40 bg-background/95 backdrop-blur-md py-space-xs shadow-sm">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm">
+<!-- Horizontal Category Tabs -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 lg:pb-0 scrollbar-none" id="categoryFilterContainer">
+<button class="active-pill bg-primary text-on-primary px-space-md py-2 font-label-md text-label-md uppercase tracking-[0.22em] shrink-0 transition-colors" data-filter="all">
+          ALL EDITIONS (18)
+        </button>
+<button class="bg-surface-container hover:bg-surface-container-highest text-on-surface-variant px-space-md py-2 font-label-md text-label-md uppercase tracking-[0.22em] shrink-0 transition-colors" data-filter="women">
+          WOMEN SCULPTED LEHENGAS &amp; DRAPES (7)
+        </button>
+<button class="bg-surface-container hover:bg-surface-container-highest text-on-surface-variant px-space-md py-2 font-label-md text-label-md uppercase tracking-[0.22em] shrink-0 transition-colors" data-filter="men">
+          MEN BESPOKE SHERWANIS &amp; BANDHGALAS (8)
+        </button>
+<button class="bg-surface-container hover:bg-surface-container-highest text-on-surface-variant px-space-md py-2 font-label-md text-label-md uppercase tracking-[0.22em] shrink-0 transition-colors" data-filter="unisex">
+          UNISEX ATELIER LAYERS (3)
+        </button>
+</div>
+<!-- Secondary Refinements & Dropdown Triggers -->
+<div class="flex items-center gap-space-sm shrink-0 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-[0.2em]">
+<div class="relative group cursor-pointer py-1 flex items-center gap-1 hover:text-primary transition-colors">
+<span>RITUAL: ALL</span>
+<span class="material-symbols-outlined text-[14px]">expand_more</span>
+</div>
+<span class="text-secondary opacity-30">·</span>
+<div class="relative group cursor-pointer py-1 flex items-center gap-1 hover:text-primary transition-colors">
+<span>TEXTILE: ARCHIVE WEAVES</span>
+<span class="material-symbols-outlined text-[14px]">expand_more</span>
+</div>
+<span class="text-secondary opacity-30">·</span>
+<div class="relative group cursor-pointer py-1 flex items-center gap-1 hover:text-primary transition-colors">
+<span>SORT: ARCHIVAL ORDER</span>
+<span class="material-symbols-outlined text-[14px]">swap_vert</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Asymmetrical Showcase Part 1: Dominant Focus + Stacked Vertical Column -->
+<section class="w-full px-margin lg:px-margin-desktop mb-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop">
+<!-- Dominant Left Hero Silhouette (7 Cols) -->
+<article class="lg:col-span-7 group flex flex-col justify-between bg-surface-container-low p-space-md shadow-sm transition-all duration-500 hover:shadow-md">
+<div class="relative w-full aspect-[4/5] bg-surface-container overflow-hidden">
+<img alt="The Sculpted Crimson Zardozi Lehenga - Atelier Vayu Haute Couture" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdY_tiqUvNPLRViypKVIfqon7tyZz8U51fe4b7dUF77-7-qhBEZECUEpE6dljh2JPhJpVlL2qj4pGuiwmt7OA2qgclZ0IE-l7s_5BV6ziB8ciY1ZpiIvwq7W2-zFWAwms1LsxM-rSz9-l8eTm0LjWUChpx8wUO6OQegfc6HcdlMYSqV7S20nfd_7YWyrs-FPlHAgTfWoG6NEPDEUIPR74HGpLZcggF9ARw3v90C5ZPO8qZDDRhShHI"/>
+<div class="absolute top-4 left-4 bg-background/90 backdrop-blur-sm px-3 py-1">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-primary">EDITION PIECE 01 // BESPOKE</span>
+</div>
+<div class="absolute bottom-4 right-4 bg-primary text-on-primary px-3 py-1 font-label-sm text-label-sm uppercase tracking-[0.25em]">
+            LIMITED RUN OF 6
+          </div>
+</div>
+<div class="pt-space-md flex flex-col justify-between">
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-secondary">CEREMONIAL WEDDINGS • HAND-ZARDOZI</span>
+<h2 class="font-headline-md text-headline-md text-primary tracking-tight uppercase mt-1">
+                THE SCULPTED CRIMSON ZARDOZI LEHENGA
+              </h2>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">$3,800</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-[0.2em]">₹3,15,000</p>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs max-w-xl">
+            Constructed with a corset bodice in heavy mulberry silk velvet, cascading into an architectural hand-pleated kalidar skirt. Detailed with real antique metallic bullion threads and unlacquered beaten wirework.
+          </p>
+<div class="pt-space-md flex items-center justify-between border-t border-secondary/20">
+<div class="flex items-center gap-space-xs">
+<span class="bg-surface-container-high px-2 py-1 font-label-sm text-label-sm uppercase tracking-[0.2em] text-on-surface-variant">420 CRAFT HOURS</span>
+<span class="bg-surface-container-high px-2 py-1 font-label-sm text-label-sm uppercase tracking-[0.2em] text-on-surface-variant">VARANASI WEAVE</span>
+</div>
+<a class="font-label-md text-label-md uppercase tracking-[0.22em] text-primary hover:text-secondary transition-colors underline underline-offset-4 flex items-center gap-1" href="#">
+<span>EXPLORE SPECIFICATIONS</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Right Offset Stack (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-gutter-desktop">
+<!-- Stack Item 1 -->
+<article class="group bg-surface-container-low p-space-md shadow-sm transition-all duration-500 hover:shadow-md">
+<div class="relative w-full aspect-[4/5] bg-surface-container overflow-hidden">
+<img alt="Banarasi Tissue Corset Saree" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmBsZMEFiwSpY-GQkvYHVmBaA6BH5aF2qa5jDm4KwOD9ySKhLRLGgsa83xdSi7-vYm1JgemlrierbOubXxl8E9FvLCI0iPBaZsLIMXYqc91ic4Pbp6oi_CEbdE6QOdL9DlirzX9ePyVpKS1s8EMb0YasRp1q1ibxcAkj4TQUXfKeQi_yNRmqMFh9TCdCdARTNZ43ZtTGdBgJHgaL0PE73Pzwwqoc54BHEAjNZ5xvlIlY9xTCc6Q6Us"/>
+<div class="absolute top-4 left-4 bg-background/90 backdrop-blur-sm px-3 py-1">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-primary">EDITION PIECE 02</span>
+</div>
+</div>
+<div class="pt-space-sm">
+<div class="flex items-baseline justify-between gap-2">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-secondary">TISSUE DRAPERY</span>
+<h3 class="font-headline-sm text-headline-sm text-primary tracking-tight uppercase mt-0.5">
+                  BANARASI TISSUE CORSET SAREE
+                </h3>
+</div>
+<div class="text-right shrink-0">
+<span class="font-title-lg text-title-lg text-on-surface">$3,450</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-[0.2em]">₹2,85,000</p>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+              Loomed with pure gold-dipped silver zari yarns. Accompanied by a boned architectural bustier with geometric jaal stitching.
+            </p>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-on-surface-variant">READY-TO-TAILOR ARCHIVE</span>
+<a class="font-label-md text-label-md uppercase tracking-[0.22em] text-primary hover:text-secondary transition-colors underline underline-offset-4" href="#">ACQUIRE →</a>
+</div>
+</div>
+</article>
+<!-- Stack Item 2 -->
+<article class="group bg-surface-container-low p-space-md shadow-sm transition-all duration-500 hover:shadow-md">
+<div class="relative w-full aspect-[4/5] bg-surface-container overflow-hidden">
+<img alt="Layered Raw Silk Angrakha" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS38_AX1dHg99NYzkrma6gCxuBJOztXEhyovDSRhymy7OhanzX6qQgwXyvSY8x_xtzvadYFabm5mMlEZf2Xk-C1fzNSRqzJIC79ec_pwzdMOD1qUKoh5AlPlf99JTxOMESa7EY9slBGT8tVLYe-u4lAl8JxNWjJXwfUCqJNQwWTZKlJL_l9u-kqOvRhGEGCGPyxWq_xYaUN133c3XxY2-f4Qeta8aUuF5F0goAtFTXJDAeELiPx1Vv"/>
+<div class="absolute top-4 left-4 bg-background/90 backdrop-blur-sm px-3 py-1">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-primary">EDITION PIECE 03</span>
+</div>
+</div>
+<div class="pt-space-sm">
+<div class="flex items-baseline justify-between gap-2">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-secondary">MEN CEREMONIAL</span>
+<h3 class="font-headline-sm text-headline-sm text-primary tracking-tight uppercase mt-0.5">
+                  LAYERED RAW SILK ANGRAKHA
+                </h3>
+</div>
+<div class="text-right shrink-0">
+<span class="font-title-lg text-title-lg text-on-surface">$1,850</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-[0.2em]">₹1,55,000</p>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+              Distilled Mughal crossover silhouette engineered with hand-spun Chanderi silk linings and patan patola pocket highlights.
+            </p>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-on-surface-variant">MADE-TO-MEASURE ONLY</span>
+<a class="font-label-md text-label-md uppercase tracking-[0.22em] text-primary hover:text-secondary transition-colors underline underline-offset-4" href="#">ACQUIRE →</a>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Campaign Intermezzo: Full-bleed Desert Architectural Canvas -->
+<section class="w-full my-space-xl relative bg-primary-container text-on-primary overflow-hidden">
+<div class="relative w-full min-h-[540px] flex items-center">
+<div class="absolute inset-0 w-full h-full bg-cover bg-center opacity-60 mix-blend-luminosity scale-105 transition-transform duration-1000 ease-out" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBqVElC4PFZ6ffHQMLuUY7HslpJbp97il2KO-YgbxgdpvUPcbyaXq4H8fgND627Hld6ppb_BEJRWxF1VzzSzWI_4ls5-ktMX5DQiM0LVRF2LhufCNvbnVFCwymhqiiOnQ7A_ikRl1WjXAQmf8MH7tnyCWY_W1LDi_VNxYA8lTFTiXjXZL3OHdqpo0hlplNHR5GArpgIEL59EMJ-Zcfcs-CbpNFqg1ivBsKewTTxR0fT4B5D7rkswiqI');"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent"></div>
+<div class="relative z-10 w-full px-margin lg:px-margin-desktop py-space-xl max-w-4xl">
+<span class="font-label-md text-label-md uppercase tracking-[0.25em] text-secondary-fixed mb-space-sm block">
+          THE COURTYARDS OF THAR // RUNWAY ARCHIVE
+        </span>
+<blockquote class="font-headline-lg text-headline-lg font-light tracking-tight leading-tight uppercase text-on-primary">
+          “We do not repeat history. We translate it for tomorrow’s courtyards.”
+        </blockquote>
+<div class="mt-space-md flex flex-col sm:flex-row sm:items-center gap-space-md">
+<div class="flex items-center gap-3">
+<span class="w-12 h-px bg-secondary-fixed"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-tertiary-fixed">JAISALMER MONOLITHIC INSTALLATION</span>
+</div>
+<a class="bg-surface text-primary px-space-md py-2 font-label-md text-label-md uppercase tracking-[0.22em] hover:bg-surface-container-high transition-colors text-center" href="#">
+            STREAM RUNWAY RECORDING
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Asymmetrical Showcase Part 2: Tripartite Staggered Gallery -->
+<section class="w-full px-margin lg:px-margin-desktop mb-space-xl">
+<div class="flex items-end justify-between mb-space-lg">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-secondary">ARCHITECTURAL TAILORING</span>
+<h2 class="font-headline-md text-headline-md text-primary tracking-tight uppercase mt-1">
+          THE TAILORED BANDHGALA &amp; SHERWANI DOSSIER
+        </h2>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-on-surface-variant hidden md:block">
+        CURATED BY ATELIER DIRECTORS
+      </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter-desktop">
+<!-- Card 4: Ivory Asymmetric Bandhgala -->
+<article class="group bg-surface-container-low p-space-md shadow-sm transition-all duration-500 hover:shadow-md flex flex-col justify-between">
+<div>
+<div class="relative w-full aspect-[3/4] bg-surface-container overflow-hidden mb-space-sm">
+<img alt="High-fashion editorial portrait of an Indian male model wearing an avant-garde contemporary ivory silk bandhgala sherwani with asymmetric placket, muted antique brass buttons, architectural silhouette, shot in a minimalist studio setting with dramatic soft side lighting, restrained luxury, editorial mood, high-end fashion campaign." class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]" src="https://lh3.googleusercontent.com/aida/AEtjO1XbYMwPup5s-34rTBxue1Vzqb4At70mGKbu8HdKuBEHtW-AFlH8LTmVmEqSd2ZnmlA2tEGanEFqGEHscsZusMq-or7PN8DKlpsjJXwFRXCRNjaVttANZqLlVGCyJdNXNduGNcXBky_NX2IjMu-ugfr116uJqPAkeZM8VBE9JDdg6afkXI8zo2FojIAEBLD0FG_WCNb8xu8Vx4lBx__F0xQMW8jGSZ8wuJjg2In_IZ0_2VslecyyhX7NRqM"/>
+<div class="absolute top-4 left-4 bg-background/90 backdrop-blur-sm px-3 py-1">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-primary">EDITION PIECE 04</span>
+</div>
+<div class="absolute bottom-4 left-4 right-4 bg-surface/95 backdrop-blur-sm p-2 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-primary">HAND-SCULPTED COLLAR • BRASS FASTENINGS</span>
+</div>
+</div>
+<div class="flex items-baseline justify-between gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-secondary">CONTEMPORARY IVORY</span>
+<span class="font-title-lg text-title-lg text-on-surface">$2,450</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary tracking-tight uppercase mt-1">
+            IVORY ASYMMETRIC BANDHGALA
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+            Structured single-piece lapel wrapping across the torso, paired with custom hand-beaten brass toggle closures and hidden magnetic plackets.
+          </p>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-secondary/20 flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-on-surface-variant">₹2,05,000</span>
+<button class="bg-primary text-on-primary px-4 py-2 font-label-md text-label-md uppercase tracking-[0.22em] hover:bg-tertiary transition-colors">
+            SELECT SIZE
+          </button>
+</div>
+</article>
+<!-- Card 5: Sandstone Textured Bandhgala -->
+<article class="group bg-surface-container-low p-space-md shadow-sm transition-all duration-500 hover:shadow-md flex flex-col justify-between md:translate-y-8">
+<div>
+<div class="relative w-full aspect-[3/4] bg-surface-container overflow-hidden mb-space-sm">
+<img alt="High-fashion editorial portrait of an Indian male model wearing a contemporary bespoke textured raw silk bandhgala jacket in muted sandstone and warm gold accents, minimalist architectural setting, quiet luxury, high fashion editorial photography" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]" src="https://lh3.googleusercontent.com/aida/AEtjO1UZOdau96yaAnLcFdgpNuuqT9G8XZsmHS0djP9OXPTXgk7hkC5XmNlGWrzlJ80fZ_jZsZXHVvjYT6V3x3l3SBM_-BdFrL4mzTucSSwNtc9b-YBGtIDZqvJBKbJ_bENb9-VWabmORIoQ2r9aF6URGrJ5P2gqGZv05SE6F9lW-uwdx0EJKDCWjF-nOPi-W706E5Gi_5FT6r4XcEDGH7KGHWn_9aDfxkLSw7swPfaUXkyKvqqjAWJj2Ti-ydE"/>
+<div class="absolute top-4 left-4 bg-background/90 backdrop-blur-sm px-3 py-1">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-primary">EDITION PIECE 05</span>
+</div>
+<div class="absolute bottom-4 left-4 right-4 bg-surface/95 backdrop-blur-sm p-2 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-primary">MATTE SLUB WEAVE • FLUID TAILORING</span>
+</div>
+</div>
+<div class="flex items-baseline justify-between gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-secondary">ARCHITECTURAL NEUTRALS</span>
+<span class="font-title-lg text-title-lg text-on-surface">$1,850</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary tracking-tight uppercase mt-1">
+            SANDSTONE TEXTURED BANDHGALA
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+            Spun from unrefined wild tussar yarns in natural earthen pigments. Designed with dropped shoulder lines and high side architectural vents.
+          </p>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-secondary/20 flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-on-surface-variant">₹1,55,000</span>
+<button class="bg-primary text-on-primary px-4 py-2 font-label-md text-label-md uppercase tracking-[0.22em] hover:bg-tertiary transition-colors">
+            SELECT SIZE
+          </button>
+</div>
+</article>
+<!-- Card 6: Midnight Maroon Velvet Sherwani -->
+<article class="group bg-surface-container-low p-space-md shadow-sm transition-all duration-500 hover:shadow-md flex flex-col justify-between">
+<div>
+<div class="relative w-full aspect-[3/4] bg-surface-container overflow-hidden mb-space-sm">
+<img alt="Cinematic fashion portrait of an Indian gentleman in a bespoke midnight dark maroon tailored bandhgala sherwani standing in an upscale candlelit heritage salon, quiet luxury, evening formalwear." class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]" src="https://lh3.googleusercontent.com/aida/AEtjO1UU0B2eh6LORc6GNdgly4PWiqL4UTeiPCyy61vnby1uBsTXjkx9F4mTvrHSgRDlvgENS7JNjMR4AXM1sYWScdIe6lKWqscWsEpelNqsBwmFtyZ94GIxjPDd_fmQQOZnqnVW_jPCvfl0YiwGEawNhtPRD1ypQTE3Wp_2-wze7qDYEXMo_4Dm4LTDhMBSBUP1IdOFMBSC1Ia9K8o89GBhLIi-yyTwBsU1Skz-y09AhVW9f6ECZ3C-C_sHj9w"/>
+<div class="absolute top-4 left-4 bg-background/90 backdrop-blur-sm px-3 py-1">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-primary">EDITION PIECE 06</span>
+</div>
+<div class="absolute bottom-4 left-4 right-4 bg-surface/95 backdrop-blur-sm p-2 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-primary">HERITAGE SALON SPECIAL • SILK VELVET</span>
+</div>
+</div>
+<div class="flex items-baseline justify-between gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-secondary">EVENING CEREMONIAL</span>
+<span class="font-title-lg text-title-lg text-on-surface">$2,950</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary tracking-tight uppercase mt-1">
+            MIDNIGHT MAROON VELVET SHERWANI
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+            Cut in heavy silk velvet dyed in signature Atelier maroon. Minimal tonal topstitching highlighting the sculpted waist and high back vent.
+          </p>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-secondary/20 flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-on-surface-variant">₹2,45,000</span>
+<button class="bg-primary text-on-primary px-4 py-2 font-label-md text-label-md uppercase tracking-[0.22em] hover:bg-tertiary transition-colors">
+            SELECT SIZE
+          </button>
+</div>
+</article>
+</div>
+</section>
+<!-- Textile Provenance Register & Craft Dossier Strip -->
+<section class="w-full px-margin lg:px-margin-desktop mb-space-xl">
+<div class="bg-surface-container p-space-lg flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md">
+<div class="max-w-xl">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-secondary">TRACEABLE ATELIER LEDGER</span>
+<h3 class="font-headline-sm text-headline-sm text-primary tracking-tight uppercase mt-1">
+          EACH SILHOUETTE BEARS A UNIQUE WEAVING CARTOUCHE
+        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Every yardage woven for this edition is numbered, authenticated, and cataloged in the National Handloom Guild records under Master Weaver Shri R. K. Ansari.
+        </p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-md w-full lg:w-auto">
+<div class="bg-surface p-space-sm text-center">
+<span class="font-headline-md text-headline-md text-primary block">100%</span>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-on-surface-variant">MULBERRY &amp; TUSSAR</span>
+</div>
+<div class="bg-surface p-space-sm text-center">
+<span class="font-headline-md text-headline-md text-primary block">98.5%</span>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-on-surface-variant">NATURAL DYES</span>
+</div>
+<div class="bg-surface p-space-sm text-center col-span-2 sm:col-span-1">
+<span class="font-headline-md text-headline-md text-primary block">38</span>
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-on-surface-variant">WEAVER GUILD FAMILIES</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Editorial Pagination & Dynamic Loader -->
+<section class="w-full px-margin lg:px-margin-desktop pb-space-xl">
+<div class="flex flex-col items-center justify-center gap-space-sm text-center">
+<!-- Minimalist Progress Meter -->
+<div class="w-48 h-0.5 bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary w-1/3 transition-all duration-500"></div>
+</div>
+<p class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-on-surface-variant">
+        DISPLAYING 6 OF 18 BESPOKE SILHOUETTES
+      </p>
+<div class="flex flex-col sm:flex-row items-center gap-space-sm mt-space-xs">
+<button class="bg-primary text-on-primary px-space-xl py-space-xs font-label-md text-label-md uppercase tracking-[0.22em] hover:bg-tertiary transition-colors flex items-center gap-2" id="loadMoreBtn">
+<span>LOAD NEXT CURATION</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+<button class="bg-surface-container-high text-primary px-space-md py-space-xs font-label-md text-label-md uppercase tracking-[0.22em] hover:bg-surface-container-highest transition-colors">
+          REQUEST COMPLETE PRIVATE PORTFOLIO
+        </button>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Simple category filtering interaction
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('#categoryFilterContainer button');
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        filterButtons.forEach(btn => {
+          btn.classList.remove('bg-primary', 'text-on-primary');
+          btn.classList.add('bg-surface-container', 'text-on-surface-variant');
+        });
+        button.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        button.classList.add('bg-primary', 'text-on-primary');
+      });
+    });
+
+    const loadMoreBtn = document.getElementById('loadMoreBtn');
+    if (loadMoreBtn) {
+      loadMoreBtn.addEventListener('click', () => {
+        const originalText = loadMoreBtn.innerHTML;
+        loadMoreBtn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[16px]">progress_activity</span> <span>CONSULTING ARCHIVE...</span>';
+        setTimeout(() => {
+          loadMoreBtn.innerHTML = originalText;
+          alert('Next archival curation tranche (Silhouettes 07–12) has been compiled. Connecting to concierge catalogue feed.');
+        }, 800);
+      });
+    }
+  });
+</script></main><footer class="w-full bg-surface-container-low mt-space-xl"><div class="w-full px-margin lg:px-margin-desktop pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter-desktop mb-space-xl"><div class="lg:col-span-4 space-y-space-md"><h3 class="font-headline-md text-headline-md text-primary tracking-tight uppercase">ATELIER VAYU</h3><p class="font-body-md text-body-md text-on-surface-variant max-w-md">Contemporary Indian haute couture grounded in architectural discipline, ancestral weave engineering, and quiet luxury. Each creation is handcrafted individually in our New Delhi craft ateliers over hundreds of artisan hours.</p><div class="pt-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-[0.25em] text-secondary">NEW DELHI · PARIS · MILAN · LONDON</span></div></div><div class="lg:col-span-3 space-y-space-sm"><h4 class="font-label-md text-label-md uppercase tracking-[0.22em] text-primary">MAISONS &amp; PRIVATE SALONS</h4><div class="space-y-space-xs font-body-md text-body-md text-on-surface-variant"><p><strong class="text-on-surface font-title-lg">New Delhi Flagship</strong><br/>The Haveli Courtyard, Mehrauli Heritage Corridor</p><p><strong class="text-on-surface font-title-lg">Paris Salon Privé</strong><br/>18 Place Vendôme, 75001 Paris</p><p><strong class="text-on-surface font-title-lg">Milano Gallery</strong><br/>Via Montenapoleone 14, 20121 Milano</p><p><strong class="text-on-surface font-title-lg">London Residence</strong><br/>34 Mayfair Terrace, London W1K</p></div></div><div class="lg:col-span-2 space-y-space-sm"><h4 class="font-label-md text-label-md uppercase tracking-[0.22em] text-primary">CONCIERGE &amp; SERVICES</h4><ul class="space-y-space-xs font-body-md text-body-md text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="salon-and-appointments" href="#">Book Private Salon</a></li><li><a class="hover:text-primary transition-colors" data-path="archival-care" href="#">Archival Garment Care</a></li><li><a class="hover:text-primary transition-colors" data-path="concierge" href="#">Haute Tailoring Concierge</a></li><li><a class="hover:text-primary transition-colors" data-path="white-glove-delivery" href="#">Global White-Glove Dispatch</a></li><li><a class="hover:text-primary transition-colors" data-path="sustainability-provenance" href="#">Artisan Provenance Register</a></li></ul></div><div class="lg:col-span-3 space-y-space-sm"><h4 class="font-label-md text-label-md uppercase tracking-[0.22em] text-primary">PRIVATE ACCESS</h4><p class="font-body-md text-body-md text-on-surface-variant">Receive seasonal invitations to runway broadcasts, private trunk presentations, and bespoke textiles dossiers.</p><div class="flex flex-col gap-space-xs pt-space-xs"><div class="flex items-center bg-surface px-space-sm py-space-xs"><input class="w-full bg-transparent font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none" placeholder="Enter your correspondence email" type="email"/><button class="bg-primary text-on-primary px-space-md py-2 font-label-md text-label-md uppercase tracking-[0.22em] hover:bg-tertiary transition-colors">JOIN</button></div><span class="font-label-sm text-label-sm text-secondary tracking-[0.25em] uppercase">Strict confidentiality upheld.</span></div></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm"><p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-[0.25em]">© 2025 ATELIER VAYU PVT LTD. ALL RIGHTS RESERVED.</p><div class="flex items-center gap-space-md font-label-sm text-label-sm uppercase tracking-[0.25em] text-on-surface-variant"><a class="hover:text-primary transition-colors" data-path="privacy-policy" href="#">TERMS OF PRIVACY</a><a class="hover:text-primary transition-colors" data-path="archival-charter" href="#">COUTURE CHARTER</a><a class="hover:text-primary transition-colors" data-path="authenticity" href="#">AUTHENTICITY VERIFICATION</a></div></div></div></footer></body></html>
