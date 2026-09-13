@@ -136,7 +136,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                 Schedule Salon Appointment & Fitting &rarr;
               </Link>
               <button
-                onClick={handleAddToCart}
+                // onClick={handleAddToCart}
                 className="block w-full text-center border border-[#171313] text-[#171313] text-xs font-medium tracking-museum uppercase py-4 hover:bg-[#171313] hover:text-[#F4EFE6] transition-colors cursor-pointer"
               >
                 Direct Archival Acquisition ({product.priceDisplay})
