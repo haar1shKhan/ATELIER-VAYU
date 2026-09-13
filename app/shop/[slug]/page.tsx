@@ -21,6 +21,8 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
     notFound();
   }
 
+  
+
   return (
     <div className="pt-32 pb-32 px-6 md:px-12 lg:px-20 max-w-[1600px] mx-auto">
       <div className="text-[0.625rem] tracking-museum uppercase text-[#A58A5C] mb-8 flex items-center space-x-2">
@@ -134,6 +136,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                 Schedule Salon Appointment & Fitting &rarr;
               </Link>
               <button
+                onClick={handleAddToCart}
                 className="block w-full text-center border border-[#171313] text-[#171313] text-xs font-medium tracking-museum uppercase py-4 hover:bg-[#171313] hover:text-[#F4EFE6] transition-colors cursor-pointer"
               >
                 Direct Archival Acquisition ({product.priceDisplay})
