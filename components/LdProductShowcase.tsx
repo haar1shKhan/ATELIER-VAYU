@@ -186,6 +186,7 @@ const LdProductShowcase = () => {
         const isSmall = product.layout === "lg:col-span-3" || product.layout === "lg:col-span-4";
 
         return (
+          
           <div
             key={product.id}
             ref={(el) => {
@@ -196,74 +197,78 @@ const LdProductShowcase = () => {
             onMouseLeave={() => handleCardLeave(index)}
           >
             {/* IMAGE */}
-            <div
-              className={`
-                relative overflow-hidden rounded-xl
-                bg-surface-container-high
-                border border-outline-variant/50
-                shadow-sm
-                ${isSmall ? "aspect-[3/4]" : isWide ? "aspect-[16/10]" : "aspect-[4/3]"}
-              `}
-            >
-              {/* Pulsing glow ring — only rendered for the couture highlight piece */}
-              {product.hightlight && (
-                <div
-                  ref={(el) => {
-                    glowRefs.current[index] = el;
-                  }}
-                  className="pointer-events-none absolute -inset-px rounded-xl z-20 opacity-0"
-                  style={{ boxShadow: "0 0 0 1px rgba(212,175,55,0.6), 0 0 24px 4px rgba(212,175,55,0.25)" }}
-                ></div>
-              )}
+            <Link
+              href={`/shop/${product.id}`}
+              >
+              <div
+                className={`
+                  relative overflow-hidden rounded-xl
+                  bg-surface-container-high
+                  border border-outline-variant/50
+                  shadow-sm
+                  ${isSmall ? "aspect-[3/4]" : isWide ? "aspect-[16/10]" : "aspect-[4/3]"}
+                `}
+              >
+                {/* Pulsing glow ring — only rendered for the couture highlight piece */}
+                {product.hightlight && (
+                  <div
+                    ref={(el) => {
+                      glowRefs.current[index] = el;
+                    }}
+                    className="pointer-events-none absolute -inset-px rounded-xl z-20 opacity-0"
+                    style={{ boxShadow: "0 0 0 1px rgba(212,175,55,0.6), 0 0 24px 4px rgba(212,175,55,0.25)" }}
+                  ></div>
+                )}
 
-              <img
-                src={product.image}
-                alt={product.name}
-                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
-              />
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
+                />
 
-              {/* BADGE */}
-              {product.badge && (
-                <div
-                  className={`
-                    absolute top-4 left-4
-                    ${
-                      product.hightlight
-                        ? "bg-primary-container/90 border-primary/40 text-white"
-                        : "bg-surface/90 border-outline-variant/40 text-primary"
-                    }
-                    backdrop-blur-sm px-3 py-1.5 rounded-full border
-                    text-[9px] uppercase tracking-[0.2em] font-medium
-                    transition-transform duration-500 ease-out
-                    group-hover:-translate-y-0.5
-                  `}
-                >
-                  {product.badge}
+                {/* BADGE */}
+                {product.badge && (
+                  <div
+                    className={`
+                      absolute top-4 left-4
+                      ${
+                        product.hightlight
+                          ? "bg-primary-container/90 border-primary/40 text-white"
+                          : "bg-surface/90 border-outline-variant/40 text-primary"
+                      }
+                      backdrop-blur-sm px-3 py-1.5 rounded-full border
+                      text-[9px] uppercase tracking-[0.2em] font-medium
+                      transition-transform duration-500 ease-out
+                      group-hover:-translate-y-0.5
+                    `}
+                  >
+                    {product.badge}
+                  </div>
+                )}
+
+                {/* QUICK ADD — now driven by GSAP on hover for a smoother slide-up */}
+                <div className="absolute inset-x-4 bottom-4">
+                  <button
+                    ref={(el) => {
+                      quickAddRefs.current[index] = el;
+                    }}
+                    className="
+                      w-full bg-surface text-primary py-3 rounded-full
+                      text-[11px] uppercase tracking-[0.2em] font-medium shadow-lg
+                      hover:bg-primary-container hover:text-surface transition-colors
+                      flex items-center justify-center gap-2 cursor-pointer
+                      opacity-0
+                    "
+                    style={{ transform: "translateY(10px)" }}
+                  >
+                    <span className="material-symbols-outlined text-sm" data-icon="add">
+                      add
+                    </span>
+                    QUICK ADD TO BAG
+                  </button>
                 </div>
-              )}
-
-              {/* QUICK ADD — now driven by GSAP on hover for a smoother slide-up */}
-              <div className="absolute inset-x-4 bottom-4">
-                <button
-                  ref={(el) => {
-                    quickAddRefs.current[index] = el;
-                  }}
-                  className="
-                    w-full bg-surface text-primary py-3 rounded-full
-                    text-[11px] uppercase tracking-[0.2em] font-medium shadow-lg
-                    hover:bg-primary-container hover:text-surface transition-colors
-                    flex items-center justify-center gap-2 cursor-pointer
-                    opacity-0
-                  "
-                  style={{ transform: "translateY(10px)" }}
-                >
-                  <span className="material-symbols-outlined text-sm" data-icon="add">
-                    add
-                  </span>
-                  QUICK ADD TO BAG
-                </button>
               </div>
-            </div>
+            </Link>
 
             {/* PRODUCT INFO */}
             <div className="mt-5 flex items-start justify-between gap-5">
@@ -329,7 +334,7 @@ const LdProductShowcase = () => {
 
                 {!isSmall && (
                   <a
-                    href={`/products/${product.id}`}
+                    href={`/shop/${product.id}`}
                     className="group/link relative inline-block mt-2 text-[11px] uppercase tracking-[0.18em] text-primary"
                   >
                     VIEW PIECE →

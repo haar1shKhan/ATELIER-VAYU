@@ -2,6 +2,7 @@ import { PRODUCTS } from "@/lib/data/products";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { CornerVine } from "@/components/CornerVine";
 
 interface ProductPageProps {
   params: Promise<{ slug: string }>;
@@ -24,7 +25,11 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
   
 
   return (
-    <div className="pt-32 pb-32 px-6 md:px-12 lg:px-20 max-w-[1600px] mx-auto">
+    <div className="relative pt-32 pb-32 px-6 md:px-12 lg:px-20 max-w-[1600px] mx-auto overflow-hidden">
+      {/* <CornerVine className="-scale-x-100 -rotate-90 mt-10" position="top-right" /> */}
+      <CornerVine className="scale-y-100 -rotate-110 mt-8 -ml-10" position="top-left" />
+      <CornerVine className="-scale-y-100 -rotate-110 mb-10 -mr-8" position="bottom-right" />
+
       <div className="text-[0.625rem] tracking-museum uppercase text-[#A58A5C] mb-8 flex items-center space-x-2">
         <Link href="/" className="hover:text-[#171313]">Atelier</Link>
         <span>/</span>

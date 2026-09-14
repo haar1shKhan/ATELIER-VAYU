@@ -50,7 +50,7 @@ export default function CartDrawer() {
                   Select handcrafted specimens from The Ceremonial Archive to reserve for your bespoke dispatch.
                 </p>
                 <Link
-                  href="/shop"
+                  href="/shop/ivory-silk-asymmetric-bandhgala"
                   onClick={closeCart}
                   className="px-6 py-3 bg-primary text-on-primary text-xs uppercase tracking-[0.2em] font-medium hover:bg-primary-container transition-colors"
                 >

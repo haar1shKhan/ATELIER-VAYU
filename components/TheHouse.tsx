@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -15,7 +15,12 @@ const TheHouse = () => {
   const statRefs = useRef<(HTMLParagraphElement | null)[]>([]);
   const borderRef = useRef<HTMLDivElement>(null);
   const ctaRef = useRef<HTMLAnchorElement>(null);
+  const topFlowerRef = useRef<HTMLDivElement>(null);
+  const bottomFlowerRef = useRef<HTMLDivElement>(null);
+  const bottomLeftFlowerRef = useRef<HTMLDivElement>(null);
+  const [flowerSvg, setFlowerSvg] = useState<string | null>(null);
 
+  // Main section entrance animations
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
@@ -115,8 +120,75 @@ const TheHouse = () => {
     return () => ctx.revert();
   }, []);
 
+  // Load the flower line-art SVG from the public folder
+  useEffect(() => {
+    fetch("/floral-line-art-stroke.svg")
+      .then((res) => res.text())
+      .then((data) => setFlowerSvg(data));
+  }, []);
+
+  // Draw-on animation: each flower's paths get dashed to their own length,
+  // then reveal once — fired the moment that flower enters the viewport,
+  // staggered path-by-path so it reads as being sketched in. No scrub —
+  // this is a one-shot trigger, not tied to ongoing scroll position.
+  useEffect(() => {
+    if (!flowerSvg) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    const ctx = gsap.context(() => {
+      [topFlowerRef.current, bottomFlowerRef.current, bottomLeftFlowerRef.current].forEach((container) => {
+        if (!container) return;
+        const paths = container.querySelectorAll<SVGPathElement>("path");
+        if (!paths.length) return;
+
+        paths.forEach((p) => {
+          const length = p.getTotalLength();
+          p.style.strokeDasharray = `${length}`;
+          p.style.strokeDashoffset = `${length}`;
+        });
+
+        gsap.to(paths, {
+          strokeDashoffset: 0,
+          duration: 1,
+          ease: "power2.out",
+          stagger: 0.015,
+          scrollTrigger: {
+            trigger: container,
+            start: "top 85%",
+            once: true,
+          },
+        });
+      });
+    });
+
+    return () => ctx.revert();
+  }, [flowerSvg]);
+
   return (
-    <section ref={sectionRef} className="py-24 sm:py-32 bg-surface overflow-hidden" id="house">
+    <section
+      ref={sectionRef}
+      className="relative py-24 sm:py-32 bg-surface overflow-hidden"
+      id="house"
+    >
+      {/* Corner flowers — line-art paths draw themselves in once visible */}
+      {/* {flowerSvg && (
+        <div
+          ref={topFlowerRef}
+          aria-hidden="true"
+          className="pointer-events-none select-none absolute -top-6 right-0 sm:right-4 w-28 sm:w-40 lg:w-60 text-[#2D0006] [&_svg]:w-full [&_svg]:h-auto [&_svg]:block"
+          dangerouslySetInnerHTML={{ __html: flowerSvg }}
+        />
+      )} */}
+
+      {flowerSvg && (
+        <div
+          ref={bottomLeftFlowerRef}
+          aria-hidden="true"
+          className="pointer-events-none select-none absolute bottom-0 left-0 sm:left-6 w-24 sm:w-36 lg:w-60 rotate-180 -scale-x-100 text-[#4A1118] [&_svg]:w-full [&_svg]:h-auto [&_svg]:block"
+          dangerouslySetInnerHTML={{ __html: flowerSvg }}
+        />
+      )}
+
       <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16">
         {/* Editorial Whitespace Rhythm */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">

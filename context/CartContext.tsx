@@ -40,7 +40,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
       edition: "Edition // No. VII - 04",
       price: 84000,
       formattedPrice: "₹ 84,000",
-      image: "https://lh3.googleusercontent.com/aida/AOf_eG6zB01G100rF03mB9L41X6bNqJvQy19nE5R3mS8=s1600",
+      image: "/ivory-silk-asymmetric-bandhgala",
       size: "40R",
       colorway: "Ivory Sand",
       quantity: 1,
