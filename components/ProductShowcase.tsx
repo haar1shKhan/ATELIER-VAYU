@@ -121,13 +121,12 @@ const ProductShowcase = () => {
 
             <h2
               ref={headingRef}
-              className="font-display-lg text-3xl sm:text-4xl lg:text-5xl text-primary mt-2 bg-clip-text"
+              className="font-display-lg text-3xl sm:text-4xl lg:text-5xl text-[#2D0006] mt-2 bg-clip-text"
               style={{
                 backgroundImage:
                   "linear-gradient(100deg, currentColor 40%, color-mix(in srgb, currentColor 55%, white) 50%, currentColor 60%)",
                 backgroundSize: "200% 100%",
                 WebkitBackgroundClip: "text",
-                color: "transparent",
               }}
             >
               THE NEW SEASON
@@ -165,7 +164,7 @@ const ProductShowcase = () => {
                   alt="Men - Structured Tailoring & Heritage Bandhgalas"
                   className="w-full h-full object-cover object-center filter brightness-90 group-hover:scale-105 transition-transform duration-1000 ease-out"
                   data-alt="A striking digital installation art piece featuring glowing, generative geometric shapes suspended in a vast, minimalist gallery space. The room is illuminated by high-key, soft white lighting that creates a bright, modern light-mode aesthetic. The artwork relies on a sophisticated palette of deep blacks and pristine whites, punctuated by intense accents of vibrant red. The mood is serene yet technologically advanced."
-                  src="screen-2.png"
+                  src="sandstone-raw-silk-sherwani.png"
                 />
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-tertiary/90 via-tertiary/30 to-transparent"></div>
@@ -212,7 +211,7 @@ const ProductShowcase = () => {
                   alt="Women - Sculptural Silhouettes & Hand-Draped Couture"
                   className="w-full h-full object-cover object-center filter brightness-90 group-hover:scale-105 transition-transform duration-1000 ease-out"
                   data-alt="A striking digital installation art piece featuring glowing, generative geometric shapes suspended in a vast, minimalist gallery space. The room is illuminated by high-key, soft white lighting that creates a bright, modern light-mode aesthetic. The artwork relies on a sophisticated palette of deep blacks and pristine whites, punctuated by intense accents of vibrant red. The mood is serene yet technologically advanced."
-                  src="screen-1.png"
+                  src="banarasi-tissue-silk-saree.png"
                 />
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-tertiary/90 via-tertiary/30 to-transparent"></div>

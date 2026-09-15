@@ -20,13 +20,14 @@ const LdProductShowcase = () => {
     {
       id: "ivory-silk-asymmetric-bandhgala",
       name: "Ivory Silk Asymmetric Bandhgala",
+      slug: "ivory-silk-asymmetric-bandhgala",
       category: "MENSWEAR OCCASION",
       description:
         "Hand-woven Varanasi Tussar silk with concealed placket & sand-cast brass buttons",
       price: 84000,
       formattedPrice: "₹84,000",
       usdPrice: "$2,450",
-      image: "high_fashion_editorial_portrait_of_an_indian_male_model_wearing_an_avant_garde.png",
+      image: "ivory-silk-asymmetric-bandhgala.png",
       edition: "Edition // No. VII - 04",
       size: "40R",
       colorway: "Ivory Sand",
@@ -37,13 +38,14 @@ const LdProductShowcase = () => {
     {
       id: "sculpted-crimson-zardozi-lehenga",
       name: "The Sculpted Crimson Zardozi Lehenga",
+      slug: "/crimson-sculpted-lehenga",
       category: "BRIDAL & COUTURE",
       description:
         "Architectural velvet corset bodice paired with cascading handloom gold dabka panels and fluid draped dupatta. Finished with sand-cast antique brass accents.",
       price: 145000,
       formattedPrice: "₹1,45,000",
       usdPrice: "$3,800",
-      image: "high_fashion_editorial_portrait_of_an_indian_female_model_wearing_a.png",
+      image: "/crimson-sculpted-lehenga.png",
       edition: "Edition // No. VII - 01",
       size: "38R",
       colorway: "Crimson Vermilion",
@@ -55,12 +57,13 @@ const LdProductShowcase = () => {
     {
       id: "sandstone-raw-silk-bandhgala",
       name: "Sandstone Raw Silk Structured Bandhgala",
+      slug: "sandstone-raw-silk-sherwani",
       category: "MENSWEAR BESPOKE",
       description: "Structured raw silk bandhgala in sandstone tones.",
       price: 76000,
       formattedPrice: "₹76,000",
       usdPrice: "$1,850",
-      image: "screen-2.png",
+      image: "sandstone-raw-silk-sherwani.png",
       edition: "Edition // No. VII - 06",
       size: "42R",
       colorway: "Sandstone Gold",
@@ -71,13 +74,14 @@ const LdProductShowcase = () => {
     {
       id: "banarasi-tissue-corset-saree",
       name: "Banarasi Tissue Corset Saree",
+      slug: "banarasi-tissue-silk-saree",
       category: "WOMENSWEAR DRAPERY",
       description:
         "Handwoven metallic tissue silk in warm ecru and soft gold with structured boned corset bodice",
       price: 98000,
       formattedPrice: "₹98,000",
       usdPrice: "$2,650",
-      image: "screen-1.png",
+      image: "banarasi-tissue-silk-saree.png",
       edition: "Edition // No. VII - 08",
       size: "Custom Drape",
       colorway: "Antique Zari",
@@ -88,12 +92,13 @@ const LdProductShowcase = () => {
     {
       id: "layered-raw-silk-angrakha",
       name: "Layered Raw Silk Angrakha Kurta",
+      slug: "midnight-maroon-angrakha",
       category: "MENSWEAR CONTEMPORARY",
       description: "Muted deep maroon silk with asymmetrical overlap closure",
       price: 68000,
       formattedPrice: "₹68,000",
       usdPrice: "$1,650",
-      image: "screen-2.png",
+      image: "midnight-maroon-angrakha.png",
       edition: "Edition // No. VII - 09",
       size: "40R",
       colorway: "Nocturne Black",
@@ -198,7 +203,7 @@ const LdProductShowcase = () => {
           >
             {/* IMAGE */}
             <Link
-              href={`/shop/${product.id}`}
+              href={`/shop/${product.slug}`}
               >
               <div
                 className={`

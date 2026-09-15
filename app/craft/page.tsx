@@ -2,10 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { EDITORIAL_CAMPAIGNS } from "@/lib/data/products";
 
-export const metadata = {
-  title: "Heritage & Craft Provenance — Atelier Vayu",
-  description: "Explore our commitment to living Indian craft lineages, pit-loom weaving, and architectural tailoring."
-};
+// export const metadata = {
+//   title: "Heritage & Craft Provenance — Atelier Vayu",
+//   description: "Explore our commitment to living Indian craft lineages, pit-loom weaving, and architectural tailoring."
+// };
+
 
 export default function CraftPage() {
   const { craft } = EDITORIAL_CAMPAIGNS;

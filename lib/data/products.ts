@@ -26,9 +26,9 @@ export const PRODUCTS: Product[] = [
     price: 185000,
     priceDisplay: "₹1,85,000",
     images: [
-      "https://lh3.googleusercontent.com/aida/AEtjO1URwl2lGnhcewfmE7nfYw3fV3URDYmpzflLnYpuB1XUifU5YYA2a2XzuSwKYYyWOpMBCVt5V9HdERoA_P-rKgVYET6OM2jl1qRiexK4lpjjAAK7SHd67FlLjdJXms66lhCTZTUza7kMSeiS2NO6xQBm1qLbrrAF-Z82lk5y0RDQHOXmzdC96vyvYLXY31K_YC4IDidhaP2Yapm-HD2svTmSg1h6pT3dyOpBTlA8bP9mxvGkZ2IN7hbh-Sc",
-      "https://lh3.googleusercontent.com/aida/AEtjO1U1Tku_IGPZ6VczP9uJp2XLaRYBVF5ifwStRRub4eiIFwz91c3bK9YT2Sc1zQuXjgPM3mN4xVHkL_6X7-xNTzbJTJvRHCqhjeMumrwovjvZcp73Id4lFN5vAfbow3ZJYhIkmyAU-87jCPB7zrBaoxdZ1UQrUfzxJrHR62x2hTUCrSOeP8Ig7JPQX0awtK6bjQjGrsae0X_bnEFgKS5S7O6VnK6dsOX0WefBpbaXhhCCUkwynx13AwGlsQ"
-    ],
+      "/banarasi-tissue-silk-saree.png",
+      "/cloths-1.png",
+      ],
     colors: ["Ivory & Gold", "Champagne"],
     sizes: ["Bespoke Made-to-Measure", "Free Size Drape"],
     description: "Handwoven Banarasi tissue silk drape with an architectural structured modern corset blouse. Woven by hereditary master craftsmen over 180 hours on heirloom pit-looms in Varanasi.",
@@ -51,8 +51,8 @@ export const PRODUCTS: Product[] = [
     price: 145000,
     priceDisplay: "₹1,45,000",
     images: [
-      "https://lh3.googleusercontent.com/aida/AEtjO1XUKG7bzenGz97NavsoE2brIZBw_8uDczXUJjWyLRraVOyjP6x-bdEx6Sg_tw5ahTnwyR38nE4vrGWLv8I5Mt9swN7_XYdzDxMfuxdrKW5qEcBCXewZYemjjhDfWzO9tSGrO1BEonqOVPpN_VR3cFwA1L5H9DHntmMFtSFJg9mHI0iF6UO_i6zSPoxBWUsyCSGN9c-P-WeSPlt6WcZQEY9Lz4T3eIolY1HgHmCxV6GTjwkpED7ZH5s_c-M",
-      "https://lh3.googleusercontent.com/aida/AEtjO1XM6500UV3wVszWkob5DUJrNblRYFNcQsAXh8TlgNSCau5EGMaegKQPRsOtX9kVW8Rfi4KWk0LStCnEF8_LfGMB_4v_PJvJUTrtn87mc94rXuDVtsHz7D_m1gX6qFJKZx2E5WCUDUwtAdokJG3mRGJVlesvV1dZnIT46auTFPWLBeEa1t_shKiWol0IFuP6YXnqFYb_3etDjGAfIEIPh84ICJ-3m9C33xSax56ANbhRO_LuuLB8oD9WH9A"
+      '/midnight-maroon-angrakha.png',
+      '/cloths-2.png',
     ],
     colors: ["Midnight Maroon", "Deep Vermilion"],
     sizes: ["38R", "40R", "42R", "44R", "Bespoke"],
@@ -76,9 +76,9 @@ export const PRODUCTS: Product[] = [
     price: 165000,
     priceDisplay: "₹1,65,000",
     images: [
-      "https://lh3.googleusercontent.com/aida/AEtjO1XbYMwPup5s-34rTBxue1Vzqb4At70mGKbu8HdKuBEHtW-AFlH8LTmVmEqSd2ZnmlA2tEGanEFqGEHscsZusMq-or7PN8DKlpsjJXwFRXCRNjaVttANZqLlVGCyJdNXNduGNcXBky_NX2IjMu-ugfr116uJqPAkeZM8VBE9JDdg6afkXI8zo2FojIAEBLD0FG_WCNb8xu8Vx4lBx__F0xQMW8jGSZ8wuJjg2In_IZ0_2VslecyyhX7NRqM",
-      "https://lh3.googleusercontent.com/aida/AEtjO1XM6500UV3wVszWkob5DUJrNblRYFNcQsAXh8TlgNSCau5EGMaegKQPRsOtX9kVW8Rfi4KWk0LStCnEF8_LfGMB_4v_PJvJUTrtn87mc94rXuDVtsHz7D_m1gX6qFJKZx2E5WCUDUwtAdokJG3mRGJVlesvV1dZnIT46auTFPWLBeEa1t_shKiWol0IFuP6YXnqFYb_3etDjGAfIEIPh84ICJ-3m9C33xSax56ANbhRO_LuuLB8oD9WH9A"
-    ],
+      "/ivory-silk-asymmetric-bandhgala.png",
+      "/cloths-3.png",
+      ],
     colors: ["Warm Unbleached Ivory", "Sandstone"],
     sizes: ["38R", "40R", "42R", "44R", "Bespoke Fitting"],
     description: "Sculptural bandhgala jacket crafted from heavy GSM raw silk with off-center closure line. A masterclass in reductive Indian menswear, stripping away ornamental excess to celebrate silhouette and textile weight.",
@@ -101,8 +101,8 @@ export const PRODUCTS: Product[] = [
     price: 240000,
     priceDisplay: "₹2,40,000",
     images: [
-      "https://lh3.googleusercontent.com/aida/AEtjO1UoZH7j47Q1-FCz6PVbZK-LK0Fd6bec5W52FjnoJGeuAEw5oOoWKggk54RYNhrUd3CRP8rU9jZOhkXBgnX84TzHVr98aYL9Phk1-0qzRjCpH5i5XbBlenCAqmrdwwE9l61TWk7sqqReW_3Rw6C4adUDB74N1mg6XuVQDHN9EjtNDPufeuafZd8MVJnKFDUs_ka5_606RLrNxy-JCX38usm9zBruWkNsl1yXOpdCPB9wn7iKcMLw2dvjDzI",
-      "https://lh3.googleusercontent.com/aida/AEtjO1U_Js3x8dS6xOFhspXDABfQJn_XbP4FNn4OE2vb2h5kOA3Lmbxoti0AFd32Eawyp5CVnhCnSbi92CYXni7E7CAfK_oTNlcK10b6HnmvUd5ns5Aa7ZCk42mjsKtvvVw0KLWw4DSmSKzFfS4C5Bmaq92E07MRKpvQoqI-XTfViptE2rhdvwujr76HZXVEiPupF3OkkKYzvtzKHI8u4NqSNWAmGdX5wqH4JorhrF20ynCoVS55E5ANL3k4qIA"
+      "/crimson-sculpted-lehenga.png",
+      "/cloths-2.png"
     ],
     colors: ["Deep Madder Crimson", "Burnt Saffron"],
     sizes: ["Bespoke Tailored to Measurement"],
@@ -126,8 +126,8 @@ export const PRODUCTS: Product[] = [
     price: 195000,
     priceDisplay: "₹1,95,000",
     images: [
-      "https://lh3.googleusercontent.com/aida/AEtjO1WFlj19YVt3RJ9XlfJ8nDap2Dase-HJj-QqIrFscxlCg_kLLt68kf0TL1TInxmzMdLYZaqz3lYT_bNLZQfzeOB6i8XtLFQ1dvYxV4lDTSgqiB9r3vgjB6ROujEhoqtpZvfMnmvRJrGLhrZA6Rxtgfz5obH8bVlurMZDUD-REhSqVJOrwnlW8tQKDoZIT8V-hcElQGeFLRfpZr8dpnJ6saSWx-GAZfuUwtQOSC2mJAq2D3l41rZhhYXHQs8",
-      "https://lh3.googleusercontent.com/aida/AEtjO1XM6500UV3wVszWkob5DUJrNblRYFNcQsAXh8TlgNSCau5EGMaegKQPRsOtX9kVW8Rfi4KWk0LStCnEF8_LfGMB_4v_PJvJUTrtn87mc94rXuDVtsHz7D_m1gX6qFJKZx2E5WCUDUwtAdokJG3mRGJVlesvV1dZnIT46auTFPWLBeEa1t_shKiWol0IFuP6YXnqFYb_3etDjGAfIEIPh84ICJ-3m9C33xSax56ANbhRO_LuuLB8oD9WH9A"
+      "/sandstone-raw-silk-sherwani.png",
+      "/cloths-3.png"
     ],
     colors: ["Muted Sandstone", "Antique Ochre"],
     sizes: ["38R", "40R", "42R", "44R", "Bespoke"],
